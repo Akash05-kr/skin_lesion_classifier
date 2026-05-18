@@ -1,0 +1,267 @@
+2026-05-08 22:39:24 | INFO | [Logging] Log file: C:\Users\student\Desktop\New folder\skin_lesion_classifier\training.log
+2026-05-08 22:39:24 | INFO | [Seed] All random seeds set to 42
+2026-05-08 22:39:24 | INFO | [Device] CPU (no GPU detected)
+2026-05-08 22:39:24 | INFO | ============================================================
+2026-05-08 22:39:24 | INFO |   VGG16 Skin Lesion Classifier — MILK10k
+2026-05-08 22:39:24 | INFO | ============================================================
+2026-05-08 22:39:24 | INFO |   Mode         : full
+2026-05-08 22:39:24 | INFO |   Device       : cpu
+2026-05-08 22:39:24 | INFO |   Epochs       : 30
+2026-05-08 22:39:24 | INFO |   LR           : 0.0001
+2026-05-08 22:39:24 | INFO |   Batch size   : 32
+2026-05-08 22:39:24 | INFO |   Fine-tune    : False
+2026-05-08 22:39:24 | INFO |   Pretrained   : True
+2026-05-08 22:39:24 | INFO |   AMP          : True
+2026-05-08 22:39:24 | INFO |   Seed         : 42
+2026-05-08 22:39:24 | INFO | ============================================================
+2026-05-08 22:39:24 | INFO | [Pipeline] Building DataLoaders...
+2026-05-08 22:39:24 | INFO | [Dataset] Ground truth loaded: 5240 valid lesions
+2026-05-08 22:39:24 | INFO | [Dataset] Metadata filtered to 'dermoscopic': 5240 records
+2026-05-08 22:39:25 | INFO | [Dataset] Resolved 5240 images (0 skipped — missing file or metadata)
+2026-05-08 22:39:25 | INFO |   Class [00] AKIEC: 303 images
+2026-05-08 22:39:25 | INFO |   Class [01] BCC: 2522 images
+2026-05-08 22:39:25 | INFO |   Class [02] BEN_OTH: 44 images
+2026-05-08 22:39:25 | INFO |   Class [03] BKL: 544 images
+2026-05-08 22:39:25 | INFO |   Class [04] DF: 52 images
+2026-05-08 22:39:25 | INFO |   Class [05] INF: 50 images
+2026-05-08 22:39:25 | INFO |   Class [06] MAL_OTH: 9 images
+2026-05-08 22:39:25 | INFO |   Class [07] MEL: 450 images
+2026-05-08 22:39:25 | INFO |   Class [08] NV: 746 images
+2026-05-08 22:39:25 | INFO |   Class [09] SCCKA: 473 images
+2026-05-08 22:39:25 | INFO |   Class [10] VASC: 47 images
+2026-05-08 22:39:25 | INFO | [Split] Train=3667 | Val=786 | Test=787
+2026-05-08 22:39:25 | INFO | [DataLoaders] Train=115 batches | Val=25 batches | Test=25 batches
+2026-05-08 22:39:25 | INFO | [Pipeline] Building model...
+2026-05-08 22:39:26 | INFO | [Model] VGG16 loaded (pretrained=True)
+2026-05-08 22:39:26 | INFO | [Model] Backbone FROZEN — training FC head only.
+2026-05-08 22:39:26 | INFO | [Model] Parameters — Trainable: 119,590,923 | Total: 134,305,611
+2026-05-08 22:39:26 | INFO | [Pipeline] ── TRAINING PHASE ──
+2026-05-08 22:39:26 | INFO | [Optimizer] Adam | LR=0.0001 | WeightDecay=0.0001
+2026-05-08 22:39:26 | INFO | [AMP] Mixed Precision Training DISABLED
+2026-05-08 22:39:26 | INFO | [Training] Starting — 30 epochs max
+2026-05-08 22:41:54 | INFO | [Logging] Log file: C:\Users\student\Desktop\New folder\skin_lesion_classifier\training.log
+2026-05-08 22:41:54 | INFO | [Seed] All random seeds set to 42
+2026-05-08 22:41:54 | INFO | [Device] CPU (no GPU detected)
+2026-05-08 22:41:54 | INFO | ============================================================
+2026-05-08 22:41:54 | INFO |   VGG16 Skin Lesion Classifier — MILK10k
+2026-05-08 22:41:54 | INFO | ============================================================
+2026-05-08 22:41:54 | INFO |   Mode         : full
+2026-05-08 22:41:54 | INFO |   Device       : cpu
+2026-05-08 22:41:54 | INFO |   Epochs       : 30
+2026-05-08 22:41:54 | INFO |   LR           : 0.0001
+2026-05-08 22:41:54 | INFO |   Batch size   : 32
+2026-05-08 22:41:54 | INFO |   Fine-tune    : False
+2026-05-08 22:41:54 | INFO |   Pretrained   : True
+2026-05-08 22:41:54 | INFO |   AMP          : True
+2026-05-08 22:41:54 | INFO |   Seed         : 42
+2026-05-08 22:41:54 | INFO | ============================================================
+2026-05-08 22:41:54 | INFO | [Pipeline] Building DataLoaders...
+2026-05-08 22:41:54 | INFO | [Dataset] Ground truth loaded: 5240 valid lesions
+2026-05-08 22:41:54 | INFO | [Dataset] Metadata filtered to 'dermoscopic': 5240 records
+2026-05-08 22:41:54 | INFO | [Dataset] Resolved 5240 images (0 skipped — missing file or metadata)
+2026-05-08 22:41:54 | INFO |   Class [00] AKIEC: 303 images
+2026-05-08 22:41:54 | INFO |   Class [01] BCC: 2522 images
+2026-05-08 22:41:54 | INFO |   Class [02] BEN_OTH: 44 images
+2026-05-08 22:41:54 | INFO |   Class [03] BKL: 544 images
+2026-05-08 22:41:54 | INFO |   Class [04] DF: 52 images
+2026-05-08 22:41:54 | INFO |   Class [05] INF: 50 images
+2026-05-08 22:41:54 | INFO |   Class [06] MAL_OTH: 9 images
+2026-05-08 22:41:54 | INFO |   Class [07] MEL: 450 images
+2026-05-08 22:41:54 | INFO |   Class [08] NV: 746 images
+2026-05-08 22:41:54 | INFO |   Class [09] SCCKA: 473 images
+2026-05-08 22:41:54 | INFO |   Class [10] VASC: 47 images
+2026-05-08 22:41:54 | INFO | [Split] Train=3667 | Val=786 | Test=787
+2026-05-08 22:41:54 | INFO | [DataLoaders] Train=115 batches | Val=25 batches | Test=25 batches
+2026-05-08 22:41:54 | INFO | [Pipeline] Building model...
+2026-05-08 22:41:55 | INFO | [Model] VGG16 loaded (pretrained=True)
+2026-05-08 22:41:56 | INFO | [Model] Backbone FROZEN — training FC head only.
+2026-05-08 22:41:56 | INFO | [Model] Parameters — Trainable: 119,590,923 | Total: 134,305,611
+2026-05-08 22:41:56 | INFO | [Pipeline] ── TRAINING PHASE ──
+2026-05-08 22:41:56 | INFO | [Optimizer] Adam | LR=0.0001 | WeightDecay=0.0001
+2026-05-08 22:41:56 | INFO | [AMP] Mixed Precision Training DISABLED
+2026-05-08 22:41:56 | INFO | [Training] Starting — 30 epochs max
+2026-05-08 22:49:56 | INFO | Epoch [001/30] TrainLoss=1.8695 TrainAcc=48.54% | ValLoss=1.3028 ValAcc=60.94% | LR=1.00e-04 | Time=480.3s
+2026-05-08 22:49:59 | INFO | [Checkpoint] Saved → C:\Users\student\Desktop\New folder\skin_lesion_classifier\results\models\vgg16_best_model.pth  (epoch=1, val_acc=60.9415)
+2026-05-08 22:59:30 | INFO | Epoch [002/30] TrainLoss=1.5289 TrainAcc=54.79% | ValLoss=1.1843 ValAcc=63.10% | LR=1.00e-04 | Time=571.2s
+2026-05-08 22:59:32 | INFO | [Checkpoint] Saved → C:\Users\student\Desktop\New folder\skin_lesion_classifier\results\models\vgg16_best_model.pth  (epoch=2, val_acc=63.1043)
+2026-05-08 23:07:44 | INFO | Epoch [003/30] TrainLoss=1.3743 TrainAcc=57.59% | ValLoss=1.2125 ValAcc=62.21% | LR=1.00e-04 | Time=491.4s
+2026-05-08 23:07:44 | INFO | [EarlyStopping] No improvement for 1/7 epochs
+2026-05-08 23:14:40 | INFO | Epoch [004/30] TrainLoss=1.2921 TrainAcc=60.05% | ValLoss=1.1589 ValAcc=64.38% | LR=1.00e-04 | Time=416.7s
+2026-05-08 23:14:43 | INFO | [Checkpoint] Saved → C:\Users\student\Desktop\New folder\skin_lesion_classifier\results\models\vgg16_best_model.pth  (epoch=4, val_acc=64.3766)
+2026-05-08 23:24:45 | INFO | Epoch [005/30] TrainLoss=1.2334 TrainAcc=61.11% | ValLoss=1.1708 ValAcc=63.74% | LR=1.00e-04 | Time=601.8s
+2026-05-08 23:24:45 | INFO | [EarlyStopping] No improvement for 1/7 epochs
+2026-05-08 23:32:39 | INFO | Epoch [006/30] TrainLoss=1.1974 TrainAcc=62.29% | ValLoss=1.1324 ValAcc=65.90% | LR=1.00e-04 | Time=473.9s
+2026-05-08 23:32:40 | INFO | [Checkpoint] Saved → C:\Users\student\Desktop\New folder\skin_lesion_classifier\results\models\vgg16_best_model.pth  (epoch=6, val_acc=65.9033)
+2026-05-08 23:39:29 | INFO | Epoch [007/30] TrainLoss=1.1783 TrainAcc=62.67% | ValLoss=1.1326 ValAcc=63.87% | LR=1.00e-04 | Time=408.6s
+2026-05-08 23:39:29 | INFO | [EarlyStopping] No improvement for 1/7 epochs
+2026-05-08 23:46:16 | INFO | Epoch [008/30] TrainLoss=1.1406 TrainAcc=63.89% | ValLoss=1.1442 ValAcc=65.14% | LR=1.00e-04 | Time=407.5s
+2026-05-08 23:46:16 | INFO | [EarlyStopping] No improvement for 2/7 epochs
+2026-05-08 23:53:04 | INFO | Epoch [009/30] TrainLoss=1.1135 TrainAcc=64.74% | ValLoss=1.1278 ValAcc=64.50% | LR=1.00e-04 | Time=407.7s
+2026-05-08 23:53:06 | INFO | [Checkpoint] Saved → C:\Users\student\Desktop\New folder\skin_lesion_classifier\results\models\vgg16_best_model.pth  (epoch=9, val_acc=64.5038)
+2026-05-08 23:59:53 | INFO | Epoch [010/30] TrainLoss=1.0840 TrainAcc=64.69% | ValLoss=1.0958 ValAcc=66.28% | LR=1.00e-04 | Time=406.9s
+2026-05-08 23:59:55 | INFO | [Checkpoint] Saved → C:\Users\student\Desktop\New folder\skin_lesion_classifier\results\models\vgg16_best_model.pth  (epoch=10, val_acc=66.2850)
+2026-05-09 00:08:17 | INFO | Epoch [011/30] TrainLoss=1.0690 TrainAcc=65.91% | ValLoss=1.1091 ValAcc=63.36% | LR=1.00e-04 | Time=502.4s
+2026-05-09 00:08:17 | INFO | [EarlyStopping] No improvement for 1/7 epochs
+2026-05-09 00:17:48 | INFO | Epoch [012/30] TrainLoss=1.0507 TrainAcc=65.83% | ValLoss=1.1150 ValAcc=65.27% | LR=1.00e-04 | Time=571.0s
+2026-05-09 00:17:48 | INFO | [EarlyStopping] No improvement for 2/7 epochs
+2026-05-09 00:27:19 | INFO | Epoch [013/30] TrainLoss=1.0161 TrainAcc=67.66% | ValLoss=1.1041 ValAcc=66.67% | LR=1.00e-04 | Time=571.4s
+2026-05-09 00:27:19 | INFO | [EarlyStopping] No improvement for 3/7 epochs
+2026-05-09 00:36:59 | INFO | Epoch [014/30] TrainLoss=1.0174 TrainAcc=67.03% | ValLoss=1.0945 ValAcc=65.27% | LR=1.00e-04 | Time=579.1s
+2026-05-09 00:37:01 | INFO | [Checkpoint] Saved → C:\Users\student\Desktop\New folder\skin_lesion_classifier\results\models\vgg16_best_model.pth  (epoch=14, val_acc=65.2672)
+2026-05-09 00:46:32 | INFO | Epoch [015/30] TrainLoss=0.9867 TrainAcc=67.82% | ValLoss=1.1102 ValAcc=67.18% | LR=1.00e-04 | Time=570.9s
+2026-05-09 00:46:32 | INFO | [EarlyStopping] No improvement for 1/7 epochs
+2026-05-09 00:53:13 | INFO | Epoch [016/30] TrainLoss=0.9798 TrainAcc=68.15% | ValLoss=1.1251 ValAcc=64.89% | LR=1.00e-04 | Time=400.8s
+2026-05-09 00:53:13 | INFO | [EarlyStopping] No improvement for 2/7 epochs
+2026-05-09 01:02:37 | INFO | Epoch [017/30] TrainLoss=0.9652 TrainAcc=68.12% | ValLoss=1.1266 ValAcc=64.76% | LR=1.00e-04 | Time=563.9s
+2026-05-09 01:02:37 | INFO | [EarlyStopping] No improvement for 3/7 epochs
+2026-05-09 01:12:27 | INFO | Epoch [018/30] TrainLoss=0.9476 TrainAcc=69.48% | ValLoss=1.0916 ValAcc=66.79% | LR=1.00e-04 | Time=590.7s
+2026-05-09 01:12:30 | INFO | [Checkpoint] Saved → C:\Users\student\Desktop\New folder\skin_lesion_classifier\results\models\vgg16_best_model.pth  (epoch=18, val_acc=66.7939)
+2026-05-09 01:20:29 | INFO | Epoch [019/30] TrainLoss=0.9369 TrainAcc=69.92% | ValLoss=1.0886 ValAcc=65.65% | LR=1.00e-04 | Time=479.5s
+2026-05-09 01:20:31 | INFO | [Checkpoint] Saved → C:\Users\student\Desktop\New folder\skin_lesion_classifier\results\models\vgg16_best_model.pth  (epoch=19, val_acc=65.6489)
+2026-05-09 01:27:02 | INFO | Epoch [020/30] TrainLoss=0.9302 TrainAcc=70.14% | ValLoss=1.0521 ValAcc=67.56% | LR=1.00e-04 | Time=390.7s
+2026-05-09 01:27:04 | INFO | [Checkpoint] Saved → C:\Users\student\Desktop\New folder\skin_lesion_classifier\results\models\vgg16_best_model.pth  (epoch=20, val_acc=67.5573)
+2026-05-09 01:33:38 | INFO | Epoch [021/30] TrainLoss=0.9320 TrainAcc=70.00% | ValLoss=1.0743 ValAcc=66.54% | LR=1.00e-04 | Time=394.7s
+2026-05-09 01:33:38 | INFO | [EarlyStopping] No improvement for 1/7 epochs
+2026-05-09 01:40:03 | INFO | Epoch [022/30] TrainLoss=0.9034 TrainAcc=70.30% | ValLoss=1.0760 ValAcc=66.79% | LR=1.00e-04 | Time=384.8s
+2026-05-09 01:40:03 | INFO | [EarlyStopping] No improvement for 2/7 epochs
+2026-05-09 01:46:29 | INFO | Epoch [023/30] TrainLoss=0.8980 TrainAcc=70.58% | ValLoss=1.1011 ValAcc=67.56% | LR=1.00e-04 | Time=385.5s
+2026-05-09 01:46:29 | INFO | [EarlyStopping] No improvement for 3/7 epochs
+2026-05-09 01:52:53 | INFO | Epoch [024/30] TrainLoss=0.8652 TrainAcc=71.04% | ValLoss=1.1097 ValAcc=65.01% | LR=5.00e-05 | Time=384.8s
+2026-05-09 01:52:53 | INFO | [EarlyStopping] No improvement for 4/7 epochs
+2026-05-09 01:59:20 | INFO | Epoch [025/30] TrainLoss=0.8325 TrainAcc=71.72% | ValLoss=1.0976 ValAcc=65.78% | LR=5.00e-05 | Time=386.6s
+2026-05-09 01:59:20 | INFO | [EarlyStopping] No improvement for 5/7 epochs
+2026-05-09 11:39:14 | INFO | [Logging] Log file: C:\Users\student\Desktop\New folder\skin_lesion_classifier\training.log
+2026-05-09 11:39:14 | INFO | [Seed] All random seeds set to 42
+2026-05-09 11:39:14 | INFO | [Device] CPU (no GPU detected)
+2026-05-09 11:39:14 | INFO | ============================================================
+2026-05-09 11:39:14 | INFO |   VGG16 Skin Lesion Classifier — MILK10k
+2026-05-09 11:39:14 | INFO | ============================================================
+2026-05-09 11:39:14 | INFO |   Mode         : full
+2026-05-09 11:39:14 | INFO |   Device       : cpu
+2026-05-09 11:39:14 | INFO |   Epochs       : 30
+2026-05-09 11:39:14 | INFO |   LR           : 0.0001
+2026-05-09 11:39:14 | INFO |   Batch size   : 32
+2026-05-09 11:39:14 | INFO |   Fine-tune    : False
+2026-05-09 11:39:14 | INFO |   Pretrained   : True
+2026-05-09 11:39:14 | INFO |   AMP          : True
+2026-05-09 11:39:14 | INFO |   Seed         : 42
+2026-05-09 11:39:14 | INFO | ============================================================
+2026-05-09 11:39:14 | INFO | [Pipeline] Building DataLoaders...
+2026-05-09 11:39:14 | INFO | [Dataset] Ground truth loaded: 5240 valid lesions
+2026-05-09 11:39:14 | INFO | [Dataset] Metadata filtered to 'dermoscopic': 5240 records
+2026-05-09 11:39:15 | INFO | [Dataset] Resolved 5240 images (0 skipped — missing file or metadata)
+2026-05-09 11:39:15 | INFO |   Class [00] AKIEC: 303 images
+2026-05-09 11:39:15 | INFO |   Class [01] BCC: 2522 images
+2026-05-09 11:39:15 | INFO |   Class [02] BEN_OTH: 44 images
+2026-05-09 11:39:15 | INFO |   Class [03] BKL: 544 images
+2026-05-09 11:39:15 | INFO |   Class [04] DF: 52 images
+2026-05-09 11:39:15 | INFO |   Class [05] INF: 50 images
+2026-05-09 11:39:15 | INFO |   Class [06] MAL_OTH: 9 images
+2026-05-09 11:39:15 | INFO |   Class [07] MEL: 450 images
+2026-05-09 11:39:15 | INFO |   Class [08] NV: 746 images
+2026-05-09 11:39:15 | INFO |   Class [09] SCCKA: 473 images
+2026-05-09 11:39:15 | INFO |   Class [10] VASC: 47 images
+2026-05-09 11:39:15 | INFO | [Split] Train=3667 | Val=786 | Test=787
+2026-05-09 11:39:15 | INFO | [DataLoaders] Train=115 batches | Val=25 batches | Test=25 batches
+2026-05-09 11:39:15 | INFO | [Pipeline] Building model...
+2026-05-09 11:39:15 | INFO | [Model] VGG16 loaded (pretrained=True)
+2026-05-09 11:39:16 | INFO | [Model] Backbone FROZEN — training FC head only.
+2026-05-09 11:39:16 | INFO | [Model] Parameters — Trainable: 119,590,923 | Total: 134,305,611
+2026-05-09 11:39:16 | INFO | [Pipeline] ── TRAINING PHASE ──
+2026-05-09 11:39:16 | INFO | [Optimizer] Adam | LR=0.0001 | WeightDecay=0.0001
+2026-05-09 11:39:16 | INFO | [AMP] Mixed Precision Training DISABLED
+2026-05-09 11:39:17 | INFO | [Checkpoint] Loaded ← C:\Users\student\Desktop\New folder\skin_lesion_classifier\results\models\vgg16_best_model.pth  (epoch=20, val_loss=1.0521)
+2026-05-09 11:39:17 | INFO | [Training] Starting — 30 epochs max
+2026-05-09 11:45:55 | INFO | Epoch [021/30] TrainLoss=0.7671 TrainAcc=75.40% | ValLoss=1.1477 ValAcc=64.25% | LR=1.00e-04 | Time=398.0s
+2026-05-09 11:52:17 | INFO | Epoch [022/30] TrainLoss=0.7167 TrainAcc=76.98% | ValLoss=1.1369 ValAcc=66.41% | LR=1.00e-04 | Time=381.7s
+2026-05-09 12:00:39 | INFO | Epoch [023/30] TrainLoss=0.6807 TrainAcc=78.07% | ValLoss=1.1689 ValAcc=66.16% | LR=1.00e-04 | Time=502.2s
+2026-05-09 12:00:39 | INFO | [EarlyStopping] No improvement for 1/7 epochs
+2026-05-09 12:10:06 | INFO | Epoch [024/30] TrainLoss=0.6569 TrainAcc=78.37% | ValLoss=1.1351 ValAcc=66.41% | LR=1.00e-04 | Time=566.8s
+2026-05-09 12:19:46 | INFO | Epoch [025/30] TrainLoss=0.6237 TrainAcc=78.89% | ValLoss=1.2063 ValAcc=65.78% | LR=1.00e-04 | Time=579.8s
+2026-05-09 12:19:46 | INFO | [EarlyStopping] No improvement for 1/7 epochs
+2026-05-09 12:29:27 | INFO | Epoch [026/30] TrainLoss=0.5954 TrainAcc=79.79% | ValLoss=1.2101 ValAcc=65.78% | LR=1.00e-04 | Time=581.2s
+2026-05-09 12:29:27 | INFO | [EarlyStopping] No improvement for 2/7 epochs
+2026-05-09 12:37:39 | INFO | Epoch [027/30] TrainLoss=0.5820 TrainAcc=80.72% | ValLoss=1.2802 ValAcc=65.90% | LR=1.00e-04 | Time=491.8s
+2026-05-09 12:37:39 | INFO | [EarlyStopping] No improvement for 3/7 epochs
+2026-05-09 12:45:01 | INFO | Epoch [028/30] TrainLoss=0.5807 TrainAcc=80.72% | ValLoss=1.2285 ValAcc=65.39% | LR=5.00e-05 | Time=441.7s
+2026-05-09 12:45:01 | INFO | [EarlyStopping] No improvement for 4/7 epochs
+2026-05-09 12:52:51 | INFO | Epoch [029/30] TrainLoss=0.5258 TrainAcc=82.82% | ValLoss=1.2697 ValAcc=68.19% | LR=5.00e-05 | Time=470.9s
+2026-05-09 12:52:51 | INFO | [EarlyStopping] No improvement for 5/7 epochs
+2026-05-09 13:00:28 | INFO | Epoch [030/30] TrainLoss=0.5128 TrainAcc=83.23% | ValLoss=1.2776 ValAcc=66.28% | LR=5.00e-05 | Time=456.2s
+2026-05-09 13:00:28 | INFO | [EarlyStopping] No improvement for 6/7 epochs
+2026-05-09 13:00:29 | INFO | [Checkpoint] Saved → C:\Users\student\Desktop\New folder\skin_lesion_classifier\results\models\vgg16_final_model.pth  (epoch=30, val_acc=66.2850)
+2026-05-09 13:00:29 | INFO | [Training] Complete — Total time: 81.2 min | Best ValLoss: 1.0521
+2026-05-09 13:00:30 | INFO | [Plot] Training history saved → C:\Users\student\Desktop\New folder\skin_lesion_classifier\results\plots\training_history.png
+2026-05-09 13:00:30 | INFO | [Pipeline] Training curves saved.
+2026-05-09 13:00:30 | INFO | [Pipeline] ── EVALUATION PHASE ──
+2026-05-09 13:00:30 | INFO | [Pipeline] Loading best checkpoint: vgg16_best_model.pth
+2026-05-09 13:00:30 | INFO | [Checkpoint] Loaded ← C:\Users\student\Desktop\New folder\skin_lesion_classifier\results\models\vgg16_best_model.pth  (epoch=20, val_loss=1.0521)
+2026-05-09 13:00:30 | INFO | [Pipeline] Evaluating on VALIDATION set...
+2026-05-09 13:00:30 | INFO | [Evaluate] Running inference on val set...
+2026-05-09 13:01:37 | INFO | [Metrics] Acc=0.6756 | P=0.6357 | R=0.6756 | F1=0.6427 | AUC=0.9061
+2026-05-09 13:01:37 | INFO | [Metrics] Saved → C:\Users\student\Desktop\New folder\skin_lesion_classifier\results\metrics\val_metrics.json
+2026-05-09 13:01:37 | INFO | [Plot] Confusion matrix saved → C:\Users\student\Desktop\New folder\skin_lesion_classifier\results\plots\val_confusion_matrix.png
+2026-05-09 13:01:38 | INFO | [Plot] ROC curves saved → C:\Users\student\Desktop\New folder\skin_lesion_classifier\results\plots\val_roc_curves.png
+2026-05-09 13:01:38 | INFO | [Evaluate] All outputs saved for 'val' split.
+2026-05-09 13:01:38 | INFO | [Pipeline] Evaluating on TEST set...
+2026-05-09 13:01:38 | INFO | [Evaluate] Running inference on test set...
+2026-05-09 13:02:49 | INFO | [Metrics] Acc=0.6658 | P=0.6264 | R=0.6658 | F1=0.6352 | AUC=0.8073
+2026-05-09 13:02:49 | INFO | [Metrics] Saved → C:\Users\student\Desktop\New folder\skin_lesion_classifier\results\metrics\test_metrics.json
+2026-05-09 13:02:50 | INFO | [Plot] Confusion matrix saved → C:\Users\student\Desktop\New folder\skin_lesion_classifier\results\plots\test_confusion_matrix.png
+2026-05-09 13:02:50 | INFO | [Plot] ROC curves saved → C:\Users\student\Desktop\New folder\skin_lesion_classifier\results\plots\test_roc_curves.png
+2026-05-09 13:02:50 | INFO | [Evaluate] All outputs saved for 'test' split.
+2026-05-09 13:07:41 | INFO | [Logging] Log file: C:\Users\student\Desktop\New folder\skin_lesion_classifier\training.log
+2026-05-09 13:07:41 | INFO | [Seed] All random seeds set to 42
+2026-05-09 13:07:41 | INFO | [Device] CPU (no GPU detected)
+2026-05-09 13:07:41 | INFO | ============================================================
+2026-05-09 13:07:41 | INFO |   VGG16 Skin Lesion Classifier — MILK10k
+2026-05-09 13:07:41 | INFO | ============================================================
+2026-05-09 13:07:41 | INFO |   Mode         : eval
+2026-05-09 13:07:41 | INFO |   Device       : cpu
+2026-05-09 13:07:41 | INFO |   Epochs       : 30
+2026-05-09 13:07:41 | INFO |   LR           : 0.0001
+2026-05-09 13:07:41 | INFO |   Batch size   : 32
+2026-05-09 13:07:41 | INFO |   Fine-tune    : False
+2026-05-09 13:07:41 | INFO |   Pretrained   : True
+2026-05-09 13:07:41 | INFO |   AMP          : True
+2026-05-09 13:07:41 | INFO |   Seed         : 42
+2026-05-09 13:07:41 | INFO | ============================================================
+2026-05-09 13:07:41 | INFO | [Pipeline] Building DataLoaders...
+2026-05-09 13:07:41 | INFO | [Dataset] Ground truth loaded: 5240 valid lesions
+2026-05-09 13:07:41 | INFO | [Dataset] Metadata filtered to 'dermoscopic': 5240 records
+2026-05-09 13:07:41 | INFO | [Dataset] Resolved 5240 images (0 skipped — missing file or metadata)
+2026-05-09 13:07:41 | INFO |   Class [00] AKIEC: 303 images
+2026-05-09 13:07:41 | INFO |   Class [01] BCC: 2522 images
+2026-05-09 13:07:41 | INFO |   Class [02] BEN_OTH: 44 images
+2026-05-09 13:07:41 | INFO |   Class [03] BKL: 544 images
+2026-05-09 13:07:41 | INFO |   Class [04] DF: 52 images
+2026-05-09 13:07:41 | INFO |   Class [05] INF: 50 images
+2026-05-09 13:07:41 | INFO |   Class [06] MAL_OTH: 9 images
+2026-05-09 13:07:41 | INFO |   Class [07] MEL: 450 images
+2026-05-09 13:07:41 | INFO |   Class [08] NV: 746 images
+2026-05-09 13:07:41 | INFO |   Class [09] SCCKA: 473 images
+2026-05-09 13:07:41 | INFO |   Class [10] VASC: 47 images
+2026-05-09 13:07:41 | INFO | [Split] Train=3667 | Val=786 | Test=787
+2026-05-09 13:07:41 | INFO | [DataLoaders] Train=115 batches | Val=25 batches | Test=25 batches
+2026-05-09 13:07:41 | INFO | [Pipeline] Building model...
+2026-05-09 13:07:42 | INFO | [Model] VGG16 loaded (pretrained=True)
+2026-05-09 13:07:43 | INFO | [Model] Backbone FROZEN — training FC head only.
+2026-05-09 13:07:43 | INFO | [Model] Parameters — Trainable: 119,590,923 | Total: 134,305,611
+2026-05-09 13:07:43 | INFO | [Pipeline] ── EVALUATION PHASE ──
+2026-05-09 13:07:43 | INFO | [Pipeline] Loading best checkpoint: vgg16_best_model.pth
+2026-05-09 13:07:43 | INFO | [Checkpoint] Loaded ← C:\Users\student\Desktop\New folder\skin_lesion_classifier\results\models\vgg16_best_model.pth  (epoch=20, val_loss=1.0521)
+2026-05-09 13:07:43 | INFO | [Pipeline] Evaluating on VALIDATION set...
+2026-05-09 13:07:43 | INFO | [Evaluate] Running inference on val set...
+2026-05-09 13:08:41 | INFO | [Metrics] Acc=0.6756 | P=0.6357 | R=0.6756 | F1=0.6427 | AUC=0.9061
+2026-05-09 13:08:41 | INFO | [Metrics] Saved → C:\Users\student\Desktop\New folder\skin_lesion_classifier\results\metrics\val_metrics.json
+2026-05-09 13:08:42 | INFO | [Plot] Confusion matrix saved → C:\Users\student\Desktop\New folder\skin_lesion_classifier\results\plots\val_confusion_matrix.png
+2026-05-09 13:08:42 | INFO | [Plot] ROC curves saved → C:\Users\student\Desktop\New folder\skin_lesion_classifier\results\plots\val_roc_curves.png
+2026-05-09 13:08:42 | INFO | [Evaluate] All outputs saved for 'val' split.
+2026-05-09 13:08:42 | INFO | [Pipeline] Evaluating on TEST set...
+2026-05-09 13:08:42 | INFO | [Evaluate] Running inference on test set...
+2026-05-09 13:10:10 | INFO | [Metrics] Acc=0.6658 | P=0.6264 | R=0.6658 | F1=0.6352 | AUC=0.8073
+2026-05-09 13:10:10 | INFO | [Metrics] Saved → C:\Users\student\Desktop\New folder\skin_lesion_classifier\results\metrics\test_metrics.json
+2026-05-09 13:10:11 | INFO | [Plot] Confusion matrix saved → C:\Users\student\Desktop\New folder\skin_lesion_classifier\results\plots\test_confusion_matrix.png
+2026-05-09 13:10:12 | INFO | [Plot] ROC curves saved → C:\Users\student\Desktop\New folder\skin_lesion_classifier\results\plots\test_roc_curves.png
+2026-05-09 13:10:12 | INFO | [Evaluate] All outputs saved for 'test' split.
+2026-05-09 13:10:12 | INFO | [Pipeline] Done.
