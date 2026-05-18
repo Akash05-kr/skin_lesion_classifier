@@ -1,36 +1,16 @@
 
-
-# ==============================================================================
-# src/py
-# ==============================================================================
-"""
-py — Central Configuration Module
-=========================================
-All hyperparameters, paths, and settings are defined here.
-Centralising configuration makes the project easy to tune and reproduce.
-"""
-
 import os
 from pathlib import Path
 
-# ─────────────────────────────────────────────────────────────────────────────
-# PROJECT ROOT
-# ─────────────────────────────────────────────────────────────────────────────
 ROOT_DIR: Path = Path(__file__).resolve().parent
 
-# ─────────────────────────────────────────────────────────────────────────────
-# DATA PATHS
-# ─────────────────────────────────────────────────────────────────────────────
-DATA_DIR: Path = ROOT_DIR / "data"          # Place your MILK10k dataset here
+DATA_DIR: Path = ROOT_DIR / "data"         
 RESULTS_DIR: Path = ROOT_DIR / "results"
 PLOTS_DIR: Path = RESULTS_DIR / "plots"
 METRICS_DIR: Path = RESULTS_DIR / "metrics"
 MODELS_DIR: Path = RESULTS_DIR / "models"
 
-# ─────────────────────────────────────────────────────────────────────────────
-# DATASET SETTINGS
-# ─────────────────────────────────────────────────────────────────────────────
-# 11 diagnostic classes in MILK10k (column order from GroundTruth CSV)
+
 CLASS_NAMES: list[str] = [
     "AKIEC",     # Actinic Keratosis / Intraepithelial Carcinoma
     "BCC",       # Basal Cell Carcinoma
@@ -52,17 +32,11 @@ TRAIN_RATIO: float = 0.70
 VAL_RATIO:   float = 0.15
 TEST_RATIO:  float = 0.15
 
-# ─────────────────────────────────────────────────────────────────────────────
-# IMAGE PREPROCESSING
-# ─────────────────────────────────────────────────────────────────────────────
 IMAGE_SIZE: tuple[int, int] = (224, 224)   # VGG16 expects 224×224
-# ImageNet mean and std for normalisation (standard for pretrained models)
+
 MEAN: list[float] = [0.485, 0.456, 0.406]
 STD:  list[float] = [0.229, 0.224, 0.225]
 
-# ─────────────────────────────────────────────────────────────────────────────
-# DATA AUGMENTATION (training only)
-# ─────────────────────────────────────────────────────────────────────────────
 USE_AUGMENTATION: bool = True
 ROTATION_DEGREES: int  = 15          # ±15° random rotation
 COLOR_JITTER: dict = {               # Brightness / contrast / saturation
@@ -72,23 +46,14 @@ COLOR_JITTER: dict = {               # Brightness / contrast / saturation
     "hue":        0.05,
 }
 
-# ─────────────────────────────────────────────────────────────────────────────
-# DATALOADER
-# ─────────────────────────────────────────────────────────────────────────────
 BATCH_SIZE: int    = 32
 NUM_WORKERS: int   = 0        # 0 = main process only (required on Windows)
 PIN_MEMORY: bool   = False    # Only useful with CUDA; set False for CPU
 
-# ─────────────────────────────────────────────────────────────────────────────
-# MODEL
-# ─────────────────────────────────────────────────────────────────────────────
 PRETRAINED: bool         = True   # Use ImageNet pretrained weights
 FREEZE_FEATURES: bool    = True   # Freeze conv layers in Phase-1 training
 FINE_TUNE: bool          = False  # Set True to unfreeze all layers (Phase-2)
 
-# ─────────────────────────────────────────────────────────────────────────────
-# TRAINING
-# ─────────────────────────────────────────────────────────────────────────────
 NUM_EPOCHS: int         = 30
 LEARNING_RATE: float    = 1e-4
 WEIGHT_DECAY: float     = 1e-4    # L2 regularisation
@@ -102,22 +67,13 @@ LR_SCHEDULER_PATIENCE: int   = 3
 LR_SCHEDULER_FACTOR:   float = 0.5
 LR_SCHEDULER_MIN_LR:   float = 1e-7
 
-# Mixed Precision (AMP) — automatically enabled when CUDA is available
 USE_AMP: bool = True
 
-# ─────────────────────────────────────────────────────────────────────────────
-# REPRODUCIBILITY
-# ─────────────────────────────────────────────────────────────────────────────
 RANDOM_SEED: int = 42
 
-# ─────────────────────────────────────────────────────────────────────────────
-# LOGGING
-# ─────────────────────────────────────────────────────────────────────────────
+
 LOG_FILE: Path = ROOT_DIR / "training.log"
 
-# ─────────────────────────────────────────────────────────────────────────────
-# SAVED MODEL NAMES
-# ─────────────────────────────────────────────────────────────────────────────
 BEST_MODEL_NAME:  str = "vgg16_best_model.pth"
 FINAL_MODEL_NAME: str = "vgg16_final_model.pth"
 
@@ -130,9 +86,7 @@ def ensure_dirs() -> None:
 
 
 
-# ==============================================================================
-# src/utils.py
-# ==============================================================================
+
 """
 utils.py — Shared Utility Functions
 =====================================
@@ -168,9 +122,6 @@ from sklearn.preprocessing import label_binarize
 
 
 
-# ─────────────────────────────────────────────────────────────────────────────
-# REPRODUCIBILITY
-# ─────────────────────────────────────────────────────────────────────────────
 
 def set_seed(seed: int = RANDOM_SEED) -> None:
     """
@@ -193,10 +144,6 @@ def set_seed(seed: int = RANDOM_SEED) -> None:
     os.environ["PYTHONHASHSEED"] = str(seed)
     logging.info(f"[Seed] All random seeds set to {seed}")
 
-
-# ─────────────────────────────────────────────────────────────────────────────
-# LOGGING
-# ─────────────────────────────────────────────────────────────────────────────
 
 def setup_logging(log_file: Path = LOG_FILE) -> logging.Logger:
     """
@@ -224,9 +171,6 @@ def setup_logging(log_file: Path = LOG_FILE) -> logging.Logger:
     return logger
 
 
-# ─────────────────────────────────────────────────────────────────────────────
-# DEVICE
-# ─────────────────────────────────────────────────────────────────────────────
 
 def get_device() -> torch.device:
     """
